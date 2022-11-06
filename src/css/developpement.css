@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.def .defi{
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, black, grey);
+    background-size: 400%, 400%;
+    position: relative;
+    animation: change 6s ease-in-out infinite;
+}
+
+.def .defi h1{
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 3px solid #fff;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 5rem 10rem;
+}
+
+.def .defi h2{
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 5rem 10rem;
+}
+
+.def .defi p{
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 13rem 20rem;
+}
+
+.def .defi button {
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    background: linear-gradient(-45deg, grey, black);
+    background-size: 800% 400%;
+    padding: 1em 4em;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    transition: all .5s ease-in-out;
+    animation: gradient 6s infinite cubic-bezier(.62, .28, .23, .99) both;
+    cursor: pointer;
+   }
+   
+   button:hover {
+    animation: gradient 6s infinite ease-in-out;
+    transform: scale(1.05);
+   }
+   
+   button:active {
+    animation: gradient 6s infinite ease-in-out;
+    transform: scale(0.8);
+   }
+
+
+
+@keyframes gradient {
+    0% {
+     background-position: 0% 50%;
+    }
+   
+    50% {
+     background-position: 100% 50%;
+    }
+   
+    100% {
+     background-position: 0% 50%;
+    }
+   }
+
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
